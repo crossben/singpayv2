@@ -15,14 +15,14 @@ function Header() {
                 </div> */}
             </div>
             <nav className="flex space-x-40 text-teal-700 font-medium">
-                <a href="#" className="hover:text-teal-900">Accueil</a>
+                <a href="/" className="hover:text-teal-900">Accueil</a>
                 <a href="#" className="hover:text-teal-900">Fonctionnalités</a>
                 <a href="#" className="hover:text-teal-900">FAQ</a>
                 <a href="#" className="hover:text-teal-900">Contact</a>
             </nav>
             <button className="flex items-center space-x-2 border border-gradient-to-r from-[#85105a] to-[#057389] rounded-full px-4 py-2 bg-white text-[#85105a] hover:opacity-90">
                 <FaSignInAlt />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#85105a] to-[#057389]">Se connecter</span>
+                <a href="/login" className="text-transparent bg-clip-text bg-gradient-to-r from-[#85105a] to-[#057389]">Se connecter</a>
             </button>
         </header>
     );
