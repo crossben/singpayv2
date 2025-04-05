@@ -6,13 +6,12 @@ import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 const RegisterForm: React.FC = () => {
     const [step, setStep] = useState(1);
 
-    // Handle Next and Back buttons
     const handleNext = () => {
-        if (step < 4) setStep(step + 1); // Limit to 3 steps
+        if (step < 4) setStep(step + 1); 
     };
 
     const handleBack = () => {
-        if (step > 1) setStep(step - 1); // Don't go below step 1
+        if (step > 1) setStep(step - 1); 
     };
 
     return (
