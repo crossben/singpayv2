@@ -1,6 +1,5 @@
-
 .bg {
-
-    background-image: url("src/assets/images/home/hero_bg.png");
+    background-image: url("src/assets/images/auth/logo_sin.png");
     background-size: cover;
+    background-position: center;
 }

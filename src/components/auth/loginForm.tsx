@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import logo from "@/assets/images/auth/logo_sin.png";
+import logo from "@/assets/images/auth/logo_sing_blanc.png";
 import { z } from "zod";
 import './style.css';
 

@@ -1,4 +1,4 @@
-import logo from "@/assets/images/auth/logo_sin.png";
+import logo from "@/assets/images/footer/logo_sing.png";
 import facebook from '@/assets/images/icons/facebook.png';
 import x from '@/assets/images/icons/x.png';
 import linkedin from '@/assets/images/icons/linkedin.png';
