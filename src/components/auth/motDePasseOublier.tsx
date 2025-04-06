@@ -1,16 +1,19 @@
 import React, { useState } from "react";
 import { z } from "zod";
 import logo from "@/assets/images/footer/logo_sing.png";
+import ConfirmationPage from "./confirmationPage";
 
 const emailSchema = z.string().email("Veuillez entrer un email valide");
 
 const MotDePasseOublier: React.FC = () => {
     const [email, setEmail] = useState("");
     const [error, setError] = useState("");
+    const [isSubmitted, setIsSubmitted] = useState(false);
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         const result = emailSchema.safeParse(email);
+        setIsSubmitted(true);
 
         if (!result.success) {
             setError(result.error.errors[0].message);
@@ -19,6 +22,10 @@ const MotDePasseOublier: React.FC = () => {
 
         console.log("Email envoyé :", email);
     };
+
+    if (isSubmitted) {
+        return <ConfirmationPage text={"Un lien de réinitialisation a été envoyé à votre adresse e-mail. Veuillez vérifier votre boîte de réception et suivez les instructions pour réinitialiser votre mot de passe."} link={"/login"} linkText={"connexion"} />
+    }
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
