@@ -4,7 +4,6 @@ import logo from "@/assets/images/auth/logo_sing_blanc.png";
 import { z } from "zod";
 import './style.css';
 
-// Définir le schéma de validation avec Zod
 const loginSchema = z.object({
     email: z.string().email("Veuillez entrer un email valide."),
     password: z.string().min(6, "Le mot de passe doit comporter au moins 6 caractères."),
@@ -76,7 +75,7 @@ const LoginForm: React.FC = () => {
                             {errors.password && <div className="text-red-500 text-sm">{errors.password}</div>}
                         </div>
                         <div className="text-right mb-4">
-                            <a href="#" className="text-white text-sm hover:underline">
+                            <a href="/mot-de-passe-oublie" className="text-white text-sm hover:underline">
                                 Mot de passe oublié ?
                             </a>
                         </div>
