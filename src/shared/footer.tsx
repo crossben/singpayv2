@@ -7,7 +7,7 @@ import youtube from '@/assets/images/icons/youtube.png';
 
 const Footer = () => {
     return (
-        <footer className="border-t border-gradient-to-r from-pink-500 to-blue-500 py-6 px-7">
+        <footer className="border-gradient-to-r from-pink-500 to-blue-500 py-6 px-7">
             <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
                 <div className="flex flex-col items-start justify-between md:flex-row md:items-center space-x-20 md:space-y-0">
                     <div>
