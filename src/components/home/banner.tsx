@@ -6,7 +6,7 @@ const Banner = () => {
             className="bg-white lg:grid lg:h-140 lg:place-content-center"
             style={{ backgroundImage: `url(${hero_bg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
-            <div className="mx-auto w-screen max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
+            <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
                 <div className="max-w-prose text-left">
                     <h1 className="text-xl font-bold sm:text-4xl text-white">
                         Rejoignez notre univers, découvrez nos valeurs et devenez une partie essentielle de notre aventure.

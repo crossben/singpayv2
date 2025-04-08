@@ -1,0 +1,15 @@
+
+.modulable {
+    position: absolute;
+    top: 800px;
+    width: 1000px;
+    border-radius: 100px !important;
+}
+
+.modulable div {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 100px !important;
+}
