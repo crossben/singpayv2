@@ -3,7 +3,7 @@ import hero_bg from '@/assets/images/home/hero_bg.png'
 const Banner = () => {
     return (
         <section
-            className="bg-white lg:grid lg:h-140 lg:place-content-center"
+            className="bg-white lg:grid lg:h-140 justify-start"
             style={{ backgroundImage: `url(${hero_bg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
             <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">

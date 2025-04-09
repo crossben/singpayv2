@@ -11,6 +11,7 @@ import question from '@/assets/images/icons/question.png';
 import cadre from '@/assets/images/icons/cadre.png';
 import computer from '@/assets/images/home/computer.png';
 import { AiOutlineClose } from 'react-icons/ai';
+import Header from '@/shared/header';
 
 const IntegrationSection: React.FC = () => {
     const integrations = [
@@ -47,6 +48,7 @@ const IntegrationSection: React.FC = () => {
     ];
     return (
         <div>
+            <Header />
             <section>
                 <Banner />
             </section>

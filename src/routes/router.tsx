@@ -1,4 +1,5 @@
 import Home from "@/pages";
+import ProfilePage from "@/pages/admin/profile";
 import Login from "@/pages/auth/login";
 import MotDepasse from "@/pages/auth/motDepasse";
 import Register from "@/pages/auth/register";
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
     {
         path: "/mot-de-passe-oublie",
         element: <MotDepasse />,
+    },
+    {
+        path: "/admin/profil",
+        element: <ProfilePage />,
     },
 ]);
 
