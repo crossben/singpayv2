@@ -23,7 +23,7 @@ const router = createBrowserRouter([
         element: <MotDepasse />,
     },
     {
-        path: "/admin/profil",
+        path: "/admin",
         element: <ProfilePage />,
     },
 ]);
